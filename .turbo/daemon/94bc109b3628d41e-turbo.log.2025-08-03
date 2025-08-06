@@ -1,0 +1,51 @@
+2025-08-03T22:49:44.033209Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf(".turbo/cookies/1.cookie")}
+2025-08-03T22:49:44.033236Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2025-08-03T22:55:06.537846Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps/auth-service/package.json")}
+2025-08-03T22:55:06.537867Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("sathi-auth"), path: AnchoredSystemPathBuf("apps/auth-service") }}))
+2025-08-03T22:56:04.939155Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf(".turbo/cookies/2.cookie")}
+2025-08-03T22:56:04.939169Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2025-08-03T22:56:36.238721Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps/auth-service/package.json")}
+2025-08-03T22:56:36.238746Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("sathi-auth"), path: AnchoredSystemPathBuf("apps/auth-service") }}))
+2025-08-03T22:58:03.340277Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps/auth-service/src/index.ts")}
+2025-08-03T22:58:03.340297Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("sathi-auth"), path: AnchoredSystemPathBuf("apps/auth-service") }}))
+2025-08-03T22:58:24.440918Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps/auth-service/src/controllers/user.controller.ts")}
+2025-08-03T22:58:24.440947Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("sathi-auth"), path: AnchoredSystemPathBuf("apps/auth-service") }}))
+2025-08-03T22:58:53.140035Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps/auth-service/src/tenants/hospital.tenant.ts")}
+2025-08-03T22:58:53.140052Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("sathi-auth"), path: AnchoredSystemPathBuf("apps/auth-service") }}))
+2025-08-03T22:59:11.741383Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf(".turbo/cookies/3.cookie")}
+2025-08-03T22:59:11.741399Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2025-08-03T23:08:19.949405Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf(".turbo/cookies/4.cookie")}
+2025-08-03T23:08:19.949440Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2025-08-03T23:14:56.555133Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps/auth-service/src/controllers/signup.service.ts"), AnchoredSystemPathBuf("apps/auth-service/src/services/signup.service.ts")}
+2025-08-03T23:14:56.555155Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("sathi-auth"), path: AnchoredSystemPathBuf("apps/auth-service") }}))
+2025-08-03T23:14:57.055903Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps/auth-service/src/controllers/signup.service.ts"), AnchoredSystemPathBuf("apps/auth-service/src/routes/auth.route.ts")}
+2025-08-03T23:14:57.055924Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("sathi-auth"), path: AnchoredSystemPathBuf("apps/auth-service") }}))
+2025-08-03T23:15:04.655644Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps/auth-service/src/controllers/user.controller.ts"), AnchoredSystemPathBuf("apps/auth-service/src/services/user.controller.ts")}
+2025-08-03T23:15:04.655660Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("sathi-auth"), path: AnchoredSystemPathBuf("apps/auth-service") }}))
+2025-08-03T23:15:15.955736Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps/auth-service/src/services/user.utils.ts"), AnchoredSystemPathBuf("apps/auth-service/src/services/user.controller.ts")}
+2025-08-03T23:15:15.955752Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("sathi-auth"), path: AnchoredSystemPathBuf("apps/auth-service") }}))
+2025-08-03T23:15:24.955878Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps/auth-service/src/utils"), AnchoredSystemPathBuf("apps/auth-service/src/services")}
+2025-08-03T23:15:24.955898Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("sathi-auth"), path: AnchoredSystemPathBuf("apps/auth-service") }}))
+2025-08-03T23:15:48.756645Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps/auth-service/src/controllers/signup.service.ts"), AnchoredSystemPathBuf("apps/auth-service/src/controllers/user.controller.ts")}
+2025-08-03T23:15:48.756698Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("sathi-auth"), path: AnchoredSystemPathBuf("apps/auth-service") }}))
+2025-08-03T23:15:52.055930Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps/auth-service/src/controllers/user.controller.ts")}
+2025-08-03T23:15:52.055946Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("sathi-auth"), path: AnchoredSystemPathBuf("apps/auth-service") }}))
+2025-08-03T23:15:57.856273Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps/auth-service/src/routes/auth.route.ts")}
+2025-08-03T23:15:57.856289Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("sathi-auth"), path: AnchoredSystemPathBuf("apps/auth-service") }}))
+2025-08-03T23:17:11.756409Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps/auth-service/src/controllers/user.controller.ts"), AnchoredSystemPathBuf("apps/auth-service/src/controllers/signup.controller.ts")}
+2025-08-03T23:17:11.756425Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("sathi-auth"), path: AnchoredSystemPathBuf("apps/auth-service") }}))
+2025-08-03T23:17:30.281705Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps/auth-service/src/controllers/signin.controller.ts")}
+2025-08-03T23:17:30.281804Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("sathi-auth"), path: AnchoredSystemPathBuf("apps/auth-service") }}))
+2025-08-03T23:17:39.046260Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps/auth-service/src/controllers/signin.controller.ts")}
+2025-08-03T23:17:39.046275Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("sathi-auth"), path: AnchoredSystemPathBuf("apps/auth-service") }}))
+2025-08-03T23:17:43.344950Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps/auth-service/src/controllers/signup.controller.ts")}
+2025-08-03T23:17:43.344974Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("sathi-auth"), path: AnchoredSystemPathBuf("apps/auth-service") }}))
+2025-08-03T23:17:43.345044Z  WARN turborepo_lib::package_changes_watcher: hashes are the same, no need to rerun
+2025-08-03T23:18:22.239516Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps/auth-service/src/routes/auth.route.ts")}
+2025-08-03T23:18:22.239532Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("sathi-auth"), path: AnchoredSystemPathBuf("apps/auth-service") }}))
+2025-08-03T23:18:46.738991Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps/auth-service/src/controllers/signin.controller.ts")}
+2025-08-03T23:18:46.739005Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("sathi-auth"), path: AnchoredSystemPathBuf("apps/auth-service") }}))
+2025-08-03T23:18:59.438723Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps/auth-service/src/routes/auth.route.ts")}
+2025-08-03T23:18:59.438761Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("sathi-auth"), path: AnchoredSystemPathBuf("apps/auth-service") }}))
+2025-08-03T23:28:39.645662Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps/auth-service/src/routes/auth.route.ts")}
+2025-08-03T23:28:39.645684Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("sathi-auth"), path: AnchoredSystemPathBuf("apps/auth-service") }}))
