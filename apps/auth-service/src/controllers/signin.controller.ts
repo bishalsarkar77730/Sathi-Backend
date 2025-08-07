@@ -12,28 +12,36 @@ export async function loginController(req: Request, res: Response) {
   }
 
   try {
-    // 1. Look up the user in global DB
+    // 1. Find the user in global DB
     const user = await globalDb('users').where({ email }).first();
     if (!user) return res.status(401).json({ message: 'Invalid credentials' });
 
-    // 2. Verify password
+    // 2. Compare passwords
     const isMatch = await bcrypt.compare(password, user.password);
-    if (!isMatch) return res.status(401).json({ message: 'Invalid credentials' });
+    if (!isMatch)
+      return res.status(401).json({ message: 'Invalid credentials' });
 
-    // 3. Identify if it's a personal or tenant user
-    const isPersonal = !user.tenant_id;
-
+    // 3. Fetch tenant if exists
     let tenantInfo = null;
-    if (!isPersonal) {
-      // Tenant user (e.g. hospital staff, nurse, lab under hospital)
+    let isPersonal = false;
+
+    if (user.tenant_id) {
       const tenant = await globalDb('tenants')
         .where({ hospital_id: user.tenant_id })
         .first();
-      if (!tenant) return res.status(500).json({ message: 'Tenant not found' });
+
+      if (!tenant) {
+        return res.status(500).json({ message: 'Tenant not found' });
+      }
+
+      // Personal users like personal doctors/labs will have their own tenant, but their signup_type is 'personal'
+      isPersonal = user.signup_type === 'personal';
+
       tenantInfo = {
         id: tenant.hospital_id,
-        name: tenant.name,
+        name: tenant.name || null,
         plan: tenant.plan,
+        dbMode: tenant.db_mode || null,
       };
     }
 
@@ -50,7 +58,17 @@ export async function loginController(req: Request, res: Response) {
       { expiresIn: '7d' },
     );
 
-    return res.status(200).json({ token, user: { name: user.name, role: user.role, tenant: tenantInfo } });
+    return res.status(200).json({
+      token,
+      user: {
+        id: user.id,
+        name: user.name,
+        email: user.email,
+        role: user.role,
+        isPersonal,
+        tenant: tenantInfo,
+      },
+    });
   } catch (err) {
     console.error('Login error:', err);
     return res.status(500).json({ message: 'Server error' });
