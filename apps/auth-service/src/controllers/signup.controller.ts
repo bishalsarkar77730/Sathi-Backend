@@ -8,13 +8,13 @@ import { hospitalPlans, personalPlans } from '../configs/plan.config';
 type HospitalPlanKey = keyof typeof hospitalPlans;
 type PersonalPlanKey = keyof typeof personalPlans;
 
-function isValidHospitalPlan(plan: any): plan is HospitalPlanKey {
+function isValidHospitalPlan(plan: unknown): plan is HospitalPlanKey {
   return (
     typeof plan === 'string' && ['basic', 'standard', 'premium'].includes(plan)
   );
 }
 
-function isValidPersonalPlan(plan: any): plan is PersonalPlanKey {
+function isValidPersonalPlan(plan: unknown): plan is PersonalPlanKey {
   return (
     typeof plan === 'string' && ['basic', 'standard', 'premium'].includes(plan)
   );

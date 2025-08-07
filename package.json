@@ -14,7 +14,13 @@
   ],
   "scripts": {
     "dev:auth": "turbo run dev --filter=sathi-auth",
+    "dev:doctor": "turbo run dev --filter=sathi-doctors",
     "dev:hospital": "turbo run dev --filter=sathi-hospitals",
+    "dev:hrms": "turbo run dev --filter=sathi-hrms",
+    "dev:medicals": "turbo run dev --filter=sathi-medicals",
+    "dev:nurse": "turbo run dev --filter=sathi-nurse",
+    "dev:pathology": "turbo run dev --filter=sathi-pathology",
+    "dev:patient": "turbo run dev --filter=sathi-patient",
     "dev:all": "turbo run dev --parallel",
     "build": "tsc",
     "start": "node dist/index.js",
@@ -60,7 +66,7 @@
     "multer-s3": "^3.0.1",
     "pg": "^8.16.3",
     "reflect-metadata": "^0.2.2",
-    "turbo": "^1.12.0",
+    "turbo": "^2.5.5",
     "typeorm": "^0.3.21",
     "uuid": "^11.1.0",
     "winston": "^3.17.0"

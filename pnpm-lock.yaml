@@ -63,8 +63,8 @@ importers:
         specifier: ^0.2.2
         version: 0.2.2
       turbo:
-        specifier: ^1.12.0
-        version: 1.13.4
+        specifier: ^2.5.5
+        version: 2.5.5
       typeorm:
         specifier: ^0.3.21
         version: 0.3.25(mongodb@6.18.0)(pg@8.16.3)(reflect-metadata@0.2.2)(ts-node@10.9.2(@types/node@22.17.0)(typescript@5.9.2))
@@ -379,6 +379,369 @@ importers:
         version: 8.38.0(eslint@9.32.0)(typescript@5.9.2)
 
   apps/hospital-service:
+    dependencies:
+      '@aws-sdk/client-s3':
+        specifier: ^3.797.0
+        version: 3.859.0
+      '@types/jest':
+        specifier: ^29.5.14
+        version: 29.5.14
+      bcryptjs:
+        specifier: ^3.0.2
+        version: 3.0.2
+      cookie-parser:
+        specifier: ^1.4.7
+        version: 1.4.7
+      cors:
+        specifier: ^2.8.5
+        version: 2.8.5
+      csrf:
+        specifier: ^3.1.0
+        version: 3.1.0
+      dotenv:
+        specifier: ^16.4.7
+        version: 16.6.1
+      express:
+        specifier: ^4.21.2
+        version: 4.21.2
+      helmet:
+        specifier: ^8.1.0
+        version: 8.1.0
+      jsonwebtoken:
+        specifier: ^9.0.2
+        version: 9.0.2
+      knex:
+        specifier: ^3.1.0
+        version: 3.1.0(pg@8.16.3)
+      moment:
+        specifier: ^2.30.1
+        version: 2.30.1
+      moment-timezone:
+        specifier: ^0.5.48
+        version: 0.5.48
+      multer:
+        specifier: ^2.0.2
+        version: 2.0.2
+      multer-s3:
+        specifier: ^3.0.1
+        version: 3.0.1(@aws-sdk/client-s3@3.859.0)
+      pg:
+        specifier: ^8.16.3
+        version: 8.16.3
+      reflect-metadata:
+        specifier: ^0.2.2
+        version: 0.2.2
+      turbo:
+        specifier: ^1.12.0
+        version: 1.13.4
+      typeorm:
+        specifier: ^0.3.21
+        version: 0.3.25(mongodb@6.18.0)(pg@8.16.3)(reflect-metadata@0.2.2)(ts-node@10.9.2(@types/node@22.17.0)(typescript@5.9.2))
+      winston:
+        specifier: ^3.17.0
+        version: 3.17.0
+    devDependencies:
+      '@eslint/js':
+        specifier: ^9.23.0
+        version: 9.32.0
+      '@types/bcryptjs':
+        specifier: ^2.4.6
+        version: 2.4.6
+      '@types/cookie-parser':
+        specifier: ^1.4.8
+        version: 1.4.9(@types/express@4.17.13)
+      '@types/cors':
+        specifier: ^2.8.17
+        version: 2.8.19
+      '@types/express':
+        specifier: 4.17.13
+        version: 4.17.13
+      '@types/jsonwebtoken':
+        specifier: ^9.0.9
+        version: 9.0.10
+      '@types/multer':
+        specifier: ^1.4.12
+        version: 1.4.13
+      '@types/multer-s3':
+        specifier: ^3.0.3
+        version: 3.0.3
+      '@types/node':
+        specifier: ^22.13.13
+        version: 22.17.0
+      '@typescript-eslint/eslint-plugin':
+        specifier: ^8.27.0
+        version: 8.38.0(@typescript-eslint/parser@8.38.0(eslint@9.32.0)(typescript@5.9.2))(eslint@9.32.0)(typescript@5.9.2)
+      '@typescript-eslint/parser':
+        specifier: ^8.27.0
+        version: 8.38.0(eslint@9.32.0)(typescript@5.9.2)
+      eslint:
+        specifier: ^9.23.0
+        version: 9.32.0
+      eslint-plugin-react:
+        specifier: ^7.37.4
+        version: 7.37.5(eslint@9.32.0)
+      globals:
+        specifier: ^16.0.0
+        version: 16.3.0
+      nodemon:
+        specifier: ^3.1.9
+        version: 3.1.10
+      prettier:
+        specifier: ^3.5.3
+        version: 3.6.2
+      ts-node:
+        specifier: ^10.9.2
+        version: 10.9.2(@types/node@22.17.0)(typescript@5.9.2)
+      typescript:
+        specifier: ^5.8.2
+        version: 5.9.2
+      typescript-eslint:
+        specifier: ^8.27.0
+        version: 8.38.0(eslint@9.32.0)(typescript@5.9.2)
+
+  apps/hrms-service:
+    dependencies:
+      '@aws-sdk/client-s3':
+        specifier: ^3.797.0
+        version: 3.859.0
+      '@types/jest':
+        specifier: ^29.5.14
+        version: 29.5.14
+      bcryptjs:
+        specifier: ^3.0.2
+        version: 3.0.2
+      cookie-parser:
+        specifier: ^1.4.7
+        version: 1.4.7
+      cors:
+        specifier: ^2.8.5
+        version: 2.8.5
+      csrf:
+        specifier: ^3.1.0
+        version: 3.1.0
+      dotenv:
+        specifier: ^16.4.7
+        version: 16.6.1
+      express:
+        specifier: ^4.21.2
+        version: 4.21.2
+      helmet:
+        specifier: ^8.1.0
+        version: 8.1.0
+      jsonwebtoken:
+        specifier: ^9.0.2
+        version: 9.0.2
+      knex:
+        specifier: ^3.1.0
+        version: 3.1.0(pg@8.16.3)
+      moment:
+        specifier: ^2.30.1
+        version: 2.30.1
+      moment-timezone:
+        specifier: ^0.5.48
+        version: 0.5.48
+      multer:
+        specifier: ^2.0.2
+        version: 2.0.2
+      multer-s3:
+        specifier: ^3.0.1
+        version: 3.0.1(@aws-sdk/client-s3@3.859.0)
+      pg:
+        specifier: ^8.16.3
+        version: 8.16.3
+      reflect-metadata:
+        specifier: ^0.2.2
+        version: 0.2.2
+      turbo:
+        specifier: ^1.12.0
+        version: 1.13.4
+      typeorm:
+        specifier: ^0.3.21
+        version: 0.3.25(mongodb@6.18.0)(pg@8.16.3)(reflect-metadata@0.2.2)(ts-node@10.9.2(@types/node@22.17.0)(typescript@5.9.2))
+      winston:
+        specifier: ^3.17.0
+        version: 3.17.0
+    devDependencies:
+      '@eslint/js':
+        specifier: ^9.23.0
+        version: 9.32.0
+      '@types/bcryptjs':
+        specifier: ^2.4.6
+        version: 2.4.6
+      '@types/cookie-parser':
+        specifier: ^1.4.8
+        version: 1.4.9(@types/express@4.17.13)
+      '@types/cors':
+        specifier: ^2.8.17
+        version: 2.8.19
+      '@types/express':
+        specifier: 4.17.13
+        version: 4.17.13
+      '@types/jsonwebtoken':
+        specifier: ^9.0.9
+        version: 9.0.10
+      '@types/multer':
+        specifier: ^1.4.12
+        version: 1.4.13
+      '@types/multer-s3':
+        specifier: ^3.0.3
+        version: 3.0.3
+      '@types/node':
+        specifier: ^22.13.13
+        version: 22.17.0
+      '@typescript-eslint/eslint-plugin':
+        specifier: ^8.27.0
+        version: 8.38.0(@typescript-eslint/parser@8.38.0(eslint@9.32.0)(typescript@5.9.2))(eslint@9.32.0)(typescript@5.9.2)
+      '@typescript-eslint/parser':
+        specifier: ^8.27.0
+        version: 8.38.0(eslint@9.32.0)(typescript@5.9.2)
+      eslint:
+        specifier: ^9.23.0
+        version: 9.32.0
+      eslint-plugin-react:
+        specifier: ^7.37.4
+        version: 7.37.5(eslint@9.32.0)
+      globals:
+        specifier: ^16.0.0
+        version: 16.3.0
+      nodemon:
+        specifier: ^3.1.9
+        version: 3.1.10
+      prettier:
+        specifier: ^3.5.3
+        version: 3.6.2
+      ts-node:
+        specifier: ^10.9.2
+        version: 10.9.2(@types/node@22.17.0)(typescript@5.9.2)
+      typescript:
+        specifier: ^5.8.2
+        version: 5.9.2
+      typescript-eslint:
+        specifier: ^8.27.0
+        version: 8.38.0(eslint@9.32.0)(typescript@5.9.2)
+
+  apps/medical-service:
+    dependencies:
+      '@aws-sdk/client-s3':
+        specifier: ^3.797.0
+        version: 3.859.0
+      '@types/jest':
+        specifier: ^29.5.14
+        version: 29.5.14
+      bcryptjs:
+        specifier: ^3.0.2
+        version: 3.0.2
+      cookie-parser:
+        specifier: ^1.4.7
+        version: 1.4.7
+      cors:
+        specifier: ^2.8.5
+        version: 2.8.5
+      csrf:
+        specifier: ^3.1.0
+        version: 3.1.0
+      dotenv:
+        specifier: ^16.4.7
+        version: 16.6.1
+      express:
+        specifier: ^4.21.2
+        version: 4.21.2
+      helmet:
+        specifier: ^8.1.0
+        version: 8.1.0
+      jsonwebtoken:
+        specifier: ^9.0.2
+        version: 9.0.2
+      knex:
+        specifier: ^3.1.0
+        version: 3.1.0(pg@8.16.3)
+      moment:
+        specifier: ^2.30.1
+        version: 2.30.1
+      moment-timezone:
+        specifier: ^0.5.48
+        version: 0.5.48
+      multer:
+        specifier: ^2.0.2
+        version: 2.0.2
+      multer-s3:
+        specifier: ^3.0.1
+        version: 3.0.1(@aws-sdk/client-s3@3.859.0)
+      pg:
+        specifier: ^8.16.3
+        version: 8.16.3
+      reflect-metadata:
+        specifier: ^0.2.2
+        version: 0.2.2
+      turbo:
+        specifier: ^1.12.0
+        version: 1.13.4
+      typeorm:
+        specifier: ^0.3.21
+        version: 0.3.25(mongodb@6.18.0)(pg@8.16.3)(reflect-metadata@0.2.2)(ts-node@10.9.2(@types/node@22.17.0)(typescript@5.9.2))
+      winston:
+        specifier: ^3.17.0
+        version: 3.17.0
+    devDependencies:
+      '@eslint/js':
+        specifier: ^9.23.0
+        version: 9.32.0
+      '@types/bcryptjs':
+        specifier: ^2.4.6
+        version: 2.4.6
+      '@types/cookie-parser':
+        specifier: ^1.4.8
+        version: 1.4.9(@types/express@4.17.13)
+      '@types/cors':
+        specifier: ^2.8.17
+        version: 2.8.19
+      '@types/express':
+        specifier: 4.17.13
+        version: 4.17.13
+      '@types/jsonwebtoken':
+        specifier: ^9.0.9
+        version: 9.0.10
+      '@types/multer':
+        specifier: ^1.4.12
+        version: 1.4.13
+      '@types/multer-s3':
+        specifier: ^3.0.3
+        version: 3.0.3
+      '@types/node':
+        specifier: ^22.13.13
+        version: 22.17.0
+      '@typescript-eslint/eslint-plugin':
+        specifier: ^8.27.0
+        version: 8.38.0(@typescript-eslint/parser@8.38.0(eslint@9.32.0)(typescript@5.9.2))(eslint@9.32.0)(typescript@5.9.2)
+      '@typescript-eslint/parser':
+        specifier: ^8.27.0
+        version: 8.38.0(eslint@9.32.0)(typescript@5.9.2)
+      eslint:
+        specifier: ^9.23.0
+        version: 9.32.0
+      eslint-plugin-react:
+        specifier: ^7.37.4
+        version: 7.37.5(eslint@9.32.0)
+      globals:
+        specifier: ^16.0.0
+        version: 16.3.0
+      nodemon:
+        specifier: ^3.1.9
+        version: 3.1.10
+      prettier:
+        specifier: ^3.5.3
+        version: 3.6.2
+      ts-node:
+        specifier: ^10.9.2
+        version: 10.9.2(@types/node@22.17.0)(typescript@5.9.2)
+      typescript:
+        specifier: ^5.8.2
+        version: 5.9.2
+      typescript-eslint:
+        specifier: ^8.27.0
+        version: 8.38.0(eslint@9.32.0)(typescript@5.9.2)
+
+  apps/nurse-service:
     dependencies:
       '@aws-sdk/client-s3':
         specifier: ^3.797.0
@@ -3088,8 +3451,18 @@ packages:
     cpu: [x64]
     os: [darwin]
 
+  turbo-darwin-64@2.5.5:
+    resolution: {integrity: sha512-RYnTz49u4F5tDD2SUwwtlynABNBAfbyT2uU/brJcyh5k6lDLyNfYKdKmqd3K2ls4AaiALWrFKVSBsiVwhdFNzQ==}
+    cpu: [x64]
+    os: [darwin]
+
   turbo-darwin-arm64@1.13.4:
     resolution: {integrity: sha512-eG769Q0NF6/Vyjsr3mKCnkG/eW6dKMBZk6dxWOdrHfrg6QgfkBUk0WUUujzdtVPiUIvsh4l46vQrNVd9EOtbyA==}
+    cpu: [arm64]
+    os: [darwin]
+
+  turbo-darwin-arm64@2.5.5:
+    resolution: {integrity: sha512-Tk+ZeSNdBobZiMw9aFypQt0DlLsWSFWu1ymqsAdJLuPoAH05qCfYtRxE1pJuYHcJB5pqI+/HOxtJoQ40726Btw==}
     cpu: [arm64]
     os: [darwin]
 
@@ -3098,8 +3471,18 @@ packages:
     cpu: [x64]
     os: [linux]
 
+  turbo-linux-64@2.5.5:
+    resolution: {integrity: sha512-2/XvMGykD7VgsvWesZZYIIVXMlgBcQy+ZAryjugoTcvJv8TZzSU/B1nShcA7IAjZ0q7OsZ45uP2cOb8EgKT30w==}
+    cpu: [x64]
+    os: [linux]
+
   turbo-linux-arm64@1.13.4:
     resolution: {integrity: sha512-BJcXw1DDiHO/okYbaNdcWN6szjXyHWx9d460v6fCHY65G8CyqGU3y2uUTPK89o8lq/b2C8NK0yZD+Vp0f9VoIg==}
+    cpu: [arm64]
+    os: [linux]
+
+  turbo-linux-arm64@2.5.5:
+    resolution: {integrity: sha512-DW+8CjCjybu0d7TFm9dovTTVg1VRnlkZ1rceO4zqsaLrit3DgHnN4to4uwyuf9s2V/BwS3IYcRy+HG9BL596Iw==}
     cpu: [arm64]
     os: [linux]
 
@@ -3108,13 +3491,27 @@ packages:
     cpu: [x64]
     os: [win32]
 
+  turbo-windows-64@2.5.5:
+    resolution: {integrity: sha512-q5p1BOy8ChtSZfULuF1BhFMYIx6bevXu4fJ+TE/hyNfyHJIfjl90Z6jWdqAlyaFLmn99X/uw+7d6T/Y/dr5JwQ==}
+    cpu: [x64]
+    os: [win32]
+
   turbo-windows-arm64@1.13.4:
     resolution: {integrity: sha512-u5A+VOKHswJJmJ8o8rcilBfU5U3Y1TTAfP9wX8bFh8teYF1ghP0EhtMRLjhtp6RPa+XCxHHVA2CiC3gbh5eg5g==}
     cpu: [arm64]
     os: [win32]
 
+  turbo-windows-arm64@2.5.5:
+    resolution: {integrity: sha512-AXbF1KmpHUq3PKQwddMGoKMYhHsy5t1YBQO8HZ04HLMR0rWv9adYlQ8kaeQJTko1Ay1anOBFTqaxfVOOsu7+1Q==}
+    cpu: [arm64]
+    os: [win32]
+
   turbo@1.13.4:
     resolution: {integrity: sha512-1q7+9UJABuBAHrcC4Sxp5lOqYS5mvxRrwa33wpIyM18hlOCpRD/fTJNxZ0vhbMcJmz15o9kkVm743mPn7p6jpQ==}
+    hasBin: true
+
+  turbo@2.5.5:
+    resolution: {integrity: sha512-eZ7wI6KjtT1eBqCnh2JPXWNUAxtoxxfi6VdBdZFvil0ychCOTxbm7YLRBi1JSt7U3c+u3CLxpoPxLdvr/Npr3A==}
     hasBin: true
 
   type-check@0.4.0:
@@ -6363,19 +6760,37 @@ snapshots:
   turbo-darwin-64@1.13.4:
     optional: true
 
+  turbo-darwin-64@2.5.5:
+    optional: true
+
   turbo-darwin-arm64@1.13.4:
+    optional: true
+
+  turbo-darwin-arm64@2.5.5:
     optional: true
 
   turbo-linux-64@1.13.4:
     optional: true
 
+  turbo-linux-64@2.5.5:
+    optional: true
+
   turbo-linux-arm64@1.13.4:
+    optional: true
+
+  turbo-linux-arm64@2.5.5:
     optional: true
 
   turbo-windows-64@1.13.4:
     optional: true
 
+  turbo-windows-64@2.5.5:
+    optional: true
+
   turbo-windows-arm64@1.13.4:
+    optional: true
+
+  turbo-windows-arm64@2.5.5:
     optional: true
 
   turbo@1.13.4:
@@ -6386,6 +6801,15 @@ snapshots:
       turbo-linux-arm64: 1.13.4
       turbo-windows-64: 1.13.4
       turbo-windows-arm64: 1.13.4
+
+  turbo@2.5.5:
+    optionalDependencies:
+      turbo-darwin-64: 2.5.5
+      turbo-darwin-arm64: 2.5.5
+      turbo-linux-64: 2.5.5
+      turbo-linux-arm64: 2.5.5
+      turbo-windows-64: 2.5.5
+      turbo-windows-arm64: 2.5.5
 
   type-check@0.4.0:
     dependencies:

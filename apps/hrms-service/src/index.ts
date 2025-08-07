@@ -10,10 +10,10 @@ dotenv.config({
 const app = express();
 const PORT = config.PORT || 4000;
 
-app.get('/health', (_, res) => {
-  res.send({ status: 'Hospital Service Running 🏥' });
+app.get('/hrms', (_, res) => {
+  res.send({ status: 'HRMS Service Running 🏥' });
 });
 
 app.listen(PORT, () => {
-  console.log(`Hospital service running at http://localhost:${PORT}`);
+  console.log(`HRMS service running at http://localhost:${PORT}`);
 });
